@@ -1,0 +1,8 @@
+{
+    "views": {
+        "string": "text",
+        "number": "text",
+        "datetime": "date",
+        "array": "list"
+    }
+}

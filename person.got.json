@@ -1,0 +1,50 @@
+{
+    "name": "Person",
+    "properties": [
+        {
+            "name": "Firstname",
+            "type": "string",
+            "view": "text",
+            "access": "rw"
+        },
+        {
+            "name": "Lastname",
+            "type": "string",
+            "view": "text",
+            "access": "rw",
+            "validators": [
+                "required",
+                {
+                    "minLength": 5
+                }
+            ]
+        },
+        {
+            "name": "Mother",
+            "type": "Person",
+            "view": {
+                "name": "PersonView",
+                "properties": {
+                    "Lastname": {
+                        "type": "string",
+                        "view": "text",
+                        "map": "Person.Lastname",
+                        "validators": [
+                            "required",
+                            {
+                                "minLength": 5
+                            }
+                        ]
+                    }
+                }
+            },
+            "access": "r"
+        },
+        {
+            "name": "Mother",
+            "type": "Person",
+            "view": "Person",
+            "access": "r"
+        }
+    ]
+}
