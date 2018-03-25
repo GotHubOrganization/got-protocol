@@ -9,11 +9,11 @@ The got protocol is a description language of typed objects which can be rendere
 Types have a name and properties. 
 
 ```json
-{
+[{
 
     "name": "Person",
     "properties": []
-}
+}]
 ```
 
 Properties are defined by a type, the accessability (read/write), a view component as a key and its validators. Primitively typed properties have simple view components like `"text"` for type `string` or `"date"` for type `datetime` whereas properties with complex types (e.g. `BestFriend`) have a complex type as a view component which renders other primitve or complex properties itself. The standard view for a complex property is the actual type of the property (e.g. `Person` for type `Person`).
