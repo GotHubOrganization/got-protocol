@@ -1,5 +1,7 @@
 {
     "name": "Person",
+    "validators": [],
+    "required": true,
     "properties": [
         {
             "name": "Firstname",
@@ -13,7 +15,6 @@
             "view": "text",
             "access": "rw",
             "validators": [
-                "required",
                 {
                     "minLength": 5
                 }
@@ -30,7 +31,6 @@
                         "view": "text",
                         "map": "Person.Lastname",
                         "validators": [
-                            "required",
                             {
                                 "minLength": 5
                             }

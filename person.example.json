@@ -1,0 +1,10 @@
+{
+    "schemaName": "Person",
+    "data": {
+        "Person1":
+        {
+            "firstname": "Niklas",
+            "lastname": "Mencke"
+        }
+    }
+}

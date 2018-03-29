@@ -1,5 +1,7 @@
 {
     "name": "Person",
+    "validators": [],
+    "required": true,
     "properties": [
         {
             "name": "Firstname",
@@ -28,10 +30,13 @@
                         "name": "City",
                         "type": "string",
                         "view": "text",
-                        "access": "rw"
+                        "access": "rw",
+                        "validators": [],
+                        "required": true
                     }
                 ]
             },
+            "validators": [],
             "access": "rw"
         }
     ]
