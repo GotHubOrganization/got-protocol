@@ -1,4 +1,4 @@
-{
+[{
     "name": "Person",
     "validators": [],
     "required": true,
@@ -36,15 +36,9 @@
                             }
                         ]
                     }
-                }
-            },
-            "access": "r"
-        },
-        {
-            "name": "Mother",
-            "type": "Person",
-            "view": "Person",
-            "access": "r"
+                },
+                "access": "r"
+            }
         }
-    ]
-}
+        ]
+}]

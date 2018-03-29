@@ -1,9 +1,8 @@
-{
+[{
     "name": "Person",
     "validators": [],
     "required": true,
-    "properties": [
-        {
+    "properties": [{
             "name": "Firstname",
             "type": "string",
             "view": "text",
@@ -19,8 +18,7 @@
             "name": "Address",
             "type": {
                 "name": "Address",
-                "properties": [
-                    {
+                "properties": [{
                         "name": "Street",
                         "type": "string",
                         "view": "text",
@@ -40,4 +38,4 @@
             "access": "rw"
         }
     ]
-}
+}]
