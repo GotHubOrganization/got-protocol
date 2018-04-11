@@ -1,4 +1,4 @@
-{
+[{
     "name": "Person",
     "properties": [
         {
@@ -13,7 +13,6 @@
             "view": "text",
             "access": "rw",
             "validators": [
-                "required",
                 {
                     "minLength": 5
                 }
@@ -30,21 +29,14 @@
                         "view": "text",
                         "map": "Person.Lastname",
                         "validators": [
-                            "required",
                             {
                                 "minLength": 5
                             }
                         ]
                     }
-                }
-            },
-            "access": "r"
-        },
-        {
-            "name": "Mother",
-            "type": "Person",
-            "view": "Person",
-            "access": "r"
+                },
+                "access": "r"
+            }
         }
-    ]
-}
+        ]
+}]
